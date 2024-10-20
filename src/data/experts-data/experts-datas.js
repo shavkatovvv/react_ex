@@ -11,6 +11,7 @@ export const exportsData = [
             instagram: InstagramIcon,
             twitter: TwitterIcon,
         },
+        id: 1,
     },
 
     {
@@ -22,6 +23,7 @@ export const exportsData = [
             facebook: FacebookIcon,
             twitter: TwitterIcon,
         },
+        id: 2,
     },
 
     {
@@ -33,5 +35,6 @@ export const exportsData = [
             facebook: FacebookIcon,
             twitter: TwitterIcon,
         },
+        id: 3,
     },
 ];

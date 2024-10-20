@@ -33,7 +33,10 @@ export const Organic = () => {
                         <ul className="flex items-center gap-[20px] ">
                             {organicData.map((item) => {
                                 return (
-                                    <Link key={item.id}>
+                                    <Link
+                                        to={`/prod-det/${item.id}`}
+                                        key={item.id}
+                                    >
                                         <li className="bg-whiteGray rounded-[30px] pt-[40px] pb-[17px] px-[25px] w-[369px]">
                                             <div className="text-white text-[15px] font-semibold py-[5px] px-[12px] bg-title rounded-[8px] mb-[10px] inline-block">
                                                 {item.category}

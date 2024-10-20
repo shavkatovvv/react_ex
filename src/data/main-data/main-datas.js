@@ -1,4 +1,5 @@
 import { StarIcon } from "../star-icon";
+import { nanoid } from "nanoid";
 
 export const MainData = [
     {

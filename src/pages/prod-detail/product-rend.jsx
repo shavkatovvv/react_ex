@@ -1,25 +1,19 @@
 import React from "react";
-import { MainData } from "../../data/main-data/main-datas";
 import { Link } from "react-router-dom";
+import { MainData } from "../../data/main-data/main-datas";
 import { StarIcon } from "../../data/star-icon";
-import { PrimaryBtn } from "../btns/button";
-import { RightIcon } from "../hero/right-icon";
 
-export const OurProducts = () => {
+export const ProductRend = () => {
     return (
-        <section className="py-[176px]">
+        <>
             <div className="container">
-                <div className="pr_block">
-                    <p className="font-Yellowtail mb-[8px] font-p text-green text-h4Title text-center">
-                        Categories
-                    </p>
-
-                    <h2 className="text-title font-main text-h2Title text-center mb-[40px]">
-                        Our Products
+                <div className="mt-[140px]">
+                    <h2 className="text-title text-h2Title font-main text-center mb-[40px]">
+                        Related Products
                     </h2>
 
                     <ul className="flex items-center flex-wrap gap-[20px] justify-center mb-[120px]">
-                        {MainData.slice(0, 8).map((item) => {
+                        {MainData.slice(0, 4).map((item) => {
                             return (
                                 <Link to={`/prod-det/${item.id}`} key={item.id}>
                                     <li className="bg-whiteGray rounded-[30px] pt-[40px] pb-[17px] px-[25px] w-[369px]">
@@ -54,17 +48,8 @@ export const OurProducts = () => {
                             );
                         })}
                     </ul>
-                    <div className="w-[250px] ml-auto mr-auto">
-                        <PrimaryBtn
-                            children={"Load More"}
-                            nextIcon={<RightIcon />}
-                            className={
-                                "bg-title py-[28px] px-[46px] flex items-center gap-[10px] text-white font-bold text-p rounded-[16px]"
-                            }
-                        />
-                    </div>
                 </div>
             </div>
-        </section>
+        </>
     );
 };
