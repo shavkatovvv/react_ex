@@ -11,6 +11,9 @@ import { Cont } from "./cont";
 
 export const ProdDetail = () => {
     const { id } = useParams();
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [id]);
     const main_product = MainData.find((item) => item.id == parseInt(id));
     const organic = organicData.find((item) => item.id == parseInt(id));
     const for_you = forYou.find((item) => item.id == parseInt(id));
