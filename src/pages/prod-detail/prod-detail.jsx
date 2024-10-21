@@ -8,6 +8,7 @@ import { PrimaryBtn } from "../../components/btns/button";
 import { RightIcon } from "../../components/hero/right-icon";
 import { ProductRend } from "./product-rend";
 import { Cont } from "./cont";
+import { HeroDet } from "./hero-det";
 
 export const ProdDetail = () => {
     const { id } = useParams();
@@ -20,10 +21,11 @@ export const ProdDetail = () => {
 
     return (
         <>
+            <HeroDet />
             {main_product && (
                 <>
                     <div className="container">
-                        <div className="wrapper flex items-center gap-[88px]">
+                        <div className="wrapper flex items-center gap-[88px] pt-[100px]">
                             <div className="bg-whiteGray  rounded-[20px]">
                                 <img
                                     className="w-[580px]"
@@ -83,7 +85,7 @@ export const ProdDetail = () => {
             {organic && (
                 <>
                     <div className="container">
-                        <div className="wrapper flex items-center gap-[88px]">
+                        <div className="wrapper flex items-center gap-[88px] pt-[100px]">
                             <div className="bg-whiteGray  rounded-[20px]">
                                 <img
                                     className="w-[580px]"
@@ -144,7 +146,7 @@ export const ProdDetail = () => {
             {for_you && (
                 <>
                     <div className="container">
-                        <div className="wrapper flex items-center gap-[88px]">
+                        <div className="wrapper flex items-center gap-[88px] pt-[100px]">
                             <div className="bg-whiteGray  rounded-[20px]">
                                 <img
                                     className="w-[580px]"
