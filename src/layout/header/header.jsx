@@ -64,6 +64,14 @@ export const Header = () => {
                                     </p>
                                 </li>
                             </Link>
+
+                            <Link to={"/our-team"}>
+                                <li>
+                                    <p className="text-p font-bold text-title">
+                                        OurTeam
+                                    </p>
+                                </li>
+                            </Link>
                         </ul>
                     </div>
 
